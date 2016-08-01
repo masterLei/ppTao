@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0">
+
+    <LinearLayout
+        android:id="@+id/bottom_new_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:duplicateParentState="true"
+            android:clickable="false"
+            android:scaleType="fitXY"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:clickable="false"
+  />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_read_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:duplicateParentState="true"
+            android:clickable="false"
+            android:scaleType="fitXY"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:clickable="false"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_video_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:duplicateParentState="true"
+            android:clickable="false"
+            android:scaleType="fitXY"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:clickable="false"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_lamp_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:duplicateParentState="true"
+            android:clickable="false"
+            android:scaleType="fitXY"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:clickable="false"
+       />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_pc_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:duplicateParentState="true"
+            android:clickable="false"
+            android:scaleType="fitXY"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:clickable="false"
+/>
+    </LinearLayout>
+</LinearLayout>

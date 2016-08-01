@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:text="这是一个新闻"
+        android:textColor="#0000FF"
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/photograph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/abstractBody"
+            android:text="这里有很多内容"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:lines="3"
+            android:textSize="40px"
+            android:layout_weight="0.42" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="80dp"
+            android:textColor="#66cdaa"
+            android:text="作者"
+            android:textSize="30px"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/publishTime"
+            android:text="发布于2016-05-04"
+            android:textColor="#ff99cc"
+            android:textSize="40px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <!--<ImageButton--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/imageButton"--><!--android:src="@mipmap/me"/>-->
+
+
+    <!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/imageView2"--><!--android:background="@mipmap/me"--><!--android:layout_below="@+id/textView2"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true" />-->
+
+
+</LinearLayout>
