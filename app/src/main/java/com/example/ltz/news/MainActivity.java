@@ -12,11 +12,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -90,6 +92,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         marketTab.setOnClickListener(this);
         selfTab.setOnClickListener(this);
         pictureUploadTab.setOnClickListener(this);
+
+        final View view = LayoutInflater.from(this).inflate(R.layout.picture_upload_view, null);
+        Button btn = (Button) view.findViewById(R.id.main_camera);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),
+                        "i am an ImageButton in TitleFragment ! ",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
