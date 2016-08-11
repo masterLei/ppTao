@@ -93,16 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         selfTab.setOnClickListener(this);
         pictureUploadTab.setOnClickListener(this);
 
-        final View view = LayoutInflater.from(this).inflate(R.layout.picture_upload_view, null);
-        Button btn = (Button) view.findViewById(R.id.main_camera);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),
-                        "i am an ImageButton in TitleFragment ! ",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -164,6 +155,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         View marketView = mLayoutInflater.inflate(R.layout.market_view, null);
         View picView = mLayoutInflater.inflate(R.layout.picture_upload_view, null);
+        Button btn = (Button) picView.findViewById(R.id.main_camera);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),
+                        "i am an ImageButton in TitleFragment ! ",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
         View selfView = mLayoutInflater.inflate(R.layout.self_view, null);
 
         mViews.add(marketView);
