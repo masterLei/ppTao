@@ -1,6 +1,7 @@
 package com.example.ltz.news;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
@@ -159,6 +160,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, TakePicActivity.class);
+                MainActivity.this.startActivity(intent);
                 Toast.makeText(getApplicationContext(),
                         "i am an ImageButton in TitleFragment ! ",
                         Toast.LENGTH_SHORT).show();
